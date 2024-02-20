@@ -8,9 +8,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/favicon-16x16.png" type="image/x-icon">
+
     <title>Quiz</title>
 
-    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css" />
     <script src="assets/js/main.js"></script>
@@ -33,12 +35,14 @@
     ?>
     <div class="background-q">
         <div class="q-logo-box">
+        <a href="index.php">
             <img class="logo-q" src="/img/logo-quiz.png" alt="">
+            </a>
         </div>
-        <div class="frage-container">
+        <header class="frage-container">
             <h6>Frage <?php echo ($currentQuestionIndex + 1); ?> von <?php echo $quiz["questionNum"];?></h6>
             <p><?php echo $question["question_text"]; ?> </p>
-        </div>
+        </header>
 
         <div class="quiz-form">
             <form action="<?php echo $actionUrl;?>" method="post">
@@ -73,7 +77,7 @@
                             else $value = 0;
 
                             //Entscheide für $value, wie viele punkte 
-                            echo "\n<div class='form-check'>\n";
+                            echo "\n<main class='form-check'>\n";
 
                             if ($multipleChoice) {
 
@@ -85,7 +89,7 @@
 
 
                             echo " <label class='form-check-label' for='$answerColumnName'>$answerText</label>\n";
-                            echo  "</div>\n";
+                            echo  "</main>\n";
                          }
                     }
 

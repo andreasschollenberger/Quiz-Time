@@ -14,7 +14,8 @@ include "./includes/data-collector.php"; // Muss zuerst sein wegen Start _SESSIO
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz-Time</title>
 
-    
+    <link rel="icon" href="/img/favicon-16x16.png" type="image/x-icon">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css" />
     <script src="assets/js/main.js"></script>
@@ -23,10 +24,10 @@ include "./includes/data-collector.php"; // Muss zuerst sein wegen Start _SESSIO
 
 <body>
     <div class="background">
-        <div class="img-logo">
+        <haeder class="img-logo">
             <img class="logo" src="/img/logo-quiz.png" alt="">
-        </div>
-        <div class="green-box">
+        </haeder>
+        <main class="green-box">
             <form id="quiz-form" action="quest.php" method="post" onsubmit="return navigate('next');">
                 <div class="form-floatin">
                     <label for="quiz-topic" class="form-label"></label>
@@ -61,7 +62,8 @@ include "./includes/data-collector.php"; // Muss zuerst sein wegen Start _SESSIO
                     <div class="form-floatin">
                         <input type="submit" class="btn btn-success" value="Quiz Starten">
                     </div>
-            </form> 
+            </form>
+        </main>    
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>

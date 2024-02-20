@@ -12,3 +12,8 @@ Im CSS wurde jede Seite via @media für ein responsive darstellung erarbeitet.
 Das php wurde in zusammenarbeit des Kursleiters erstellt. Die erklärungen für die Funktionalität war sehr lehreich.
 
 Die Daten der Fragen wurde in zusammenarbeit der gesammten klasse erarbeitet. Meine Topics waren tiere und werkzeuge.
+
+## Figma Link
+
+https://www.figma.com/file/0NynU5tcverSuydDcRScWk/Quiz-Projekt?type=design&node-id=0-1&mode=design&t=gvqWhecWQyWCne08-0
+
